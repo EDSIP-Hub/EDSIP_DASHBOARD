@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="https://enchanteddigitalacademy.com.ng/wp-content/uploads/2026/02/Blue-Minimal-Idea-Free-Education-Logo_20251224_160927_0000.jpg">
+        <title>EDSIP HR</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <!--SIDEBAR-->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <h2> HR MANAGER</h2>
+            </div>
+            <nav>
+                <a href="#">▣ Dashboard</a>
+                <a href="#">♙ Employees</a>
+                <a href="#">◷ Attendance</a>
+                <a href="#">▤ Leave Requests</a>
+                <a href="#">₦ Payroll</a>
+                <a href="#">⌁ Statistics</a>
+                <a href="#">⚙ Settings</a>
+                <a href="#">⇥ Logout</a>
+            </nav>
+        </aside>
+
+    <!--NAVBAR-->
+         <header class="header">
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <form class="search">
+                <button type="submit">🔍</button>
+                <input type="text" placeholder="Search employees, department, roles..." name="search">
+            </form>
+
+            <div class="header-actions">
+                <button class="notification-btn">🔔</button>
+            </div>
+            <div class="profile">
+                <img src="Images\Admin.png" alt="Admin name">
+                <h4>Francees Ekezie</h4>
+                <p> HR Manager</p>
+            </div>
+         </header>
+    <!--DASHBOARD CONTENT--> 
+        <main class="main-content">
+            <section class="welcome">
+                <h3>Welcome back, John 👋</h3>
+                <p>Here's what's happening with your employees today.</p>
+            </section>
+            
+            <section class="kpi-cards">
+                <div class="employee">
+                    <h2>Employees</h2>
+                    <p>125</p>
+                </div>
+
+                <div class="attendance">
+                    <h2>Present today</h2>
+                    <p>112</p>
+                </div>
+
+                <div class="leave">
+                    <h2>Leave</h2>
+                    <p>8</p>
+                </div>
+
+                <div class="payroll">
+                    <h2>Payroll</h2>
+                    <p>₦8.5M</p>
+                </div>
+            </section>
+
+            <section class="analytics">
+                 <div class="attendance-chart">
+                    <h2>Attendance Overview</h2>
+                    <canvas id="attendanceChart"></canvas>
+                </div>
+            </section>
+            
+            <section class="employees">
+                <h2>Recent Employees</h2>
+                
+                <table>
+                    <thead>
+                        <th>Employee</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        <td>John</td>
+                        <td>IT</td>
+                        <td>Developer</td>
+                        <td>Active</td>
+                    </tbody>
+                    <tbody>
+                        <td>Mary</td>
+                        <td>Finance</td>
+                        <td>Accountant</td>
+                        <td>Active</td>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="leave-requests">
+                <h2>Leave Requests</h2>
+
+                <div class="leave-request">
+                    <h3>John</h3>
+                    <p>Annual Leave</p>
+                    <p>20 Sep → 25 Sep</p>
+                    <p>Pending</p>
+                    
+                    <button type="button">Approve</button>
+                    <button type="button">Reject</button>
+                </div>
+
+                <div class="leave-request">
+                    <h3>Mary</h3>
+                    <p>Sick Leave</p>
+                    <p>22 Sep → 24 Sep</p>
+                    <p>Approved</p>
+                    
+                    <button type="button">Approve</button>
+                    <button type="button">Reject</button>
+                </div>
+                
+                <div class="leave-request">
+                    <h3>David</h3>
+                    <p>Annual Leave</p>
+                    <p>28 Sep → 3 Oct</p>
+                    <p>Pending</p>
+
+                    <button type="button">Approve</button>
+                    <button type="button">Reject</button>
+                </div>
+            </section>
+        </main> 
+        <script src="script.js"></script>
+    </body>
+</html>
